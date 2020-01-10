@@ -28,25 +28,25 @@ echo Running all tests..."\n\n
 
 # Add tests below
 
-test "PINA set to 0x00, output on PORTB should be 0x00:
+test "PINA set to 0x00, output on PORTB should be 0x00"
 setPINA 0x00
 continue 5
 expectPORTB 0x00
 checkResult
 
-test "PINA set to 0x01, output on PORTB should be 0x01:
+test "PINA set to 0x01, output on PORTB should be 0x01"
 setPINA 0x01
 continue 5
 expectPORTB 0x01
 checkResult
 
-test "PINA set to 0x02, output on PORTB should be 0x00:
+test "PINA set to 0x02, output on PORTB should be 0x00"
 setPINA 0x02
 continue 5
 expectPORTB 0x00
 checkResult
 
-test "PINA set to 0x03, output on PORTB should be 0x00:
+test "PINA set to 0x03, output on PORTB should be 0x00"
 setPINA 0x03
 continue 5
 expectPORTB 0x00
