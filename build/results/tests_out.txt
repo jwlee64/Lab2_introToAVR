@@ -1,10 +1,13 @@
-Breakpoint 1 at 0xe6: file source/main.c, line 21.
+Breakpoint 1 at 0xf2: file source/main.c, line 25.
 Note: automatically using hardware breakpoints for read-only addresses.
 ======================================================
 Running all tests..."
 
-"PINA set to 0x01, output on PORTC should be 0x01"..."PINA set to 0x0F, output on PORTC should be 0x84"...
-	Expected 0x84 
-	PORTC '0x800028:	0x84
-"PINA set to 0x03, output on PORTC should be 0x02"..."PINA set to 0x0A, output on PORTC should be 0x02"..."PINA set to 0x0B, output on PORTC should be 0x03"...======================================================
+"equal weight under 140 PINA 0x28 PINB 0x28 PINC 0x28, output on PORTD should be 0x78"..."equal weight over 140 PINA 0x32 PINB 0x32 PINC 0x32, output on PORTD should be 0x95"...
+	Expected 0x95 
+	PORTD '0x80002b:	0x95
+"weight under 140 shift over 80 PINA 0x00 PINB 0x00 PINC 0x51, output on PORTD should be 0x52"..."weight over 140 shift over 80 PINA 0x00 PINB 0x51 PINC 0x51, output on PORTD should be 0xa3"...
+	Expected 0xa3 
+	PORTD '0x80002b:	0xa3
+======================================================
 Quitting: Remote doesn't know how to detach
